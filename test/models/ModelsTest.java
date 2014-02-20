@@ -68,7 +68,7 @@ public class ModelsTest extends WithApplication {
 	
 	@Test
 	public void fullTest() {
-		Ebean.save((List) Yaml.load("test-data.yml"));
+		//Ebean.save((List) Yaml.load("test-data.yml"));
 		
 		assertEquals(3, User.find.findRowCount());
 		assertEquals(7, Project.find.findRowCount());
